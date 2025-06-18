@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Whatsapp AI Chrome Extension",
-  "description": "Chrome extension that uses google's Vertex AI to give you AI auto completion for your texts in whatsapp web :) ",
+  "description": "Chrome extension that uses OpenAI GPT-4o mini to give you AI auto completion for your texts in whatsapp web :) ",
   "version": "1.0",
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "declarativeContent", "scripting"],
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://web.whatsapp.com/*"],
   "background": {
     "service_worker": "background.js"
   }

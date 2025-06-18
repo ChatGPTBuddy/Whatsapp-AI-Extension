@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const { autoComplete } = require("./vertex.js");
+const { autoComplete } = require("./openai.js");
 
 app.use(express.json());
 app.use(
